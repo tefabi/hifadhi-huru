@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2022_11_24_0001_create_nodes_table
+      author: Timothy Karani
+      changes:
+        - createTable:
+            tableName: nodes
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: p_key_nodes
